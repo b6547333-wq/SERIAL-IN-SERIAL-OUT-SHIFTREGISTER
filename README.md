@@ -1,4 +1,4 @@
-# SERIAL-IN-SERIAL-OUT-SHIFTREGISTER
+<img width="1782" height="138" alt="image" src="https://github.com/user-attachments/assets/a8fc56bf-2f76-488a-ab11-430069869a7d" /># SERIAL-IN-SERIAL-OUT-SHIFTREGISTER
 
 **AIM:**
 
@@ -25,18 +25,19 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 
 **Procedure**
 
-/* write all the steps invloved */
+Implementing shit in Verilog HDL (Hardware Description Language) involves translating the simplified Boolean expressions into Verilog code to describe the behavior of digital circuits. The basic building blocks in Verilog is module. The module represent a combinational circuit. Use logical operators (&, |, ~, ^) to implement Boolean functions directly. Use built-in gate primitives for basic functions. Use University program VWF to verify the functionality of your Verilog modules. Create waveform and check outputs against expected results
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming.
+module EXP10(clk, sin, q); input clk; input sin; output [3:0] q; reg [3:0] q; always @(posedge clk) begin q[0] <= sin; q[1] <= q[0]; q[2] <= q[1]; q[3] <= q[2]; end endmodule
 
-Developed by: RegisterNumber:
-
-*/
+Developed by:Thiru subramania sami RegisterNumber:25000201
 
 **RTL LOGIC FOR SISO Shift Register**
+<img width="924" height="332" alt="image" src="https://github.com/user-attachments/assets/1316da01-79e4-467b-a2a4-83d2830a9ee3" />
 
 **TIMING DIGRAMS FOR SISO Shift Register**
+<img width="1782" height="138" alt="image" src="https://github.com/user-attachments/assets/3eb6aaa3-d34c-4f07-a7c1-90b6fdb9aba8" />
 
 **RESULTS**
+ implemented SISO Shift Register using verilog and validating their functionality using their functional tables verified
